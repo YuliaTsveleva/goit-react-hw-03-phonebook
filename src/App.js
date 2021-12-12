@@ -12,8 +12,6 @@ class App extends Component {
     filter: '',
   };
 
-  // раскомментить контакты для теста
-
   addContact = ({ name, number, email }) => {
     const alreadyExist = this.state.contacts.find(
       contact => contact.name.toLowerCase() === name.toLowerCase(),
