@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import s from './ContactItem.module.css';
+import { AiFillDelete } from 'react-icons/ai';
 
 function ContactItem({ id, name, number, email, onClick }) {
   return (
@@ -19,7 +20,7 @@ function ContactItem({ id, name, number, email, onClick }) {
         </p>
       </div>
       <button type="button" onClick={() => onClick()} className={s.Button}>
-        Delete
+        <AiFillDelete size={18} />
       </button>
     </li>
   );
