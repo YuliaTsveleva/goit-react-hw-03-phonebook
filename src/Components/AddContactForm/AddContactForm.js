@@ -48,6 +48,7 @@ class AddContactForm extends Component {
             </label>
           </div>
         ))}
+        <p className={s.Reminder}>Fields marked with * are required</p>
         <button className={s.Button} type="submit">
           <AiOutlineUserAdd className={s.Icon} size={16} />
           Add contact
