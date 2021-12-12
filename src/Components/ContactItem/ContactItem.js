@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import s from './ContactItem.module.css';
 import { AiFillDelete } from 'react-icons/ai';
 
-function ContactItem({ id, name, number, email, onClick }) {
+function ContactItem({ name, number, email, onClick }) {
   return (
-    <li key={id} className={s.Item}>
+    <li className={s.Item}>
       <div className={s.Wrapper}>
         <p className={s.Name}>{name}:</p>
         <p className={s.Number}>
@@ -29,7 +29,6 @@ function ContactItem({ id, name, number, email, onClick }) {
 export default ContactItem;
 
 ContactItem.propTypes = {
-  id: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   number: PropTypes.string.isRequired,
   email: PropTypes.string,
