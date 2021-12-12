@@ -6,6 +6,7 @@ class AddContactForm extends Component {
   state = {
     name: '',
     number: '',
+    email: '',
   };
 
   handleChange = e => {
@@ -20,6 +21,7 @@ class AddContactForm extends Component {
     this.setState({
       name: '',
       number: '',
+      email: '',
     });
   };
 
@@ -39,7 +41,7 @@ class AddContactForm extends Component {
                 name={field.name}
                 pattern={field.pattern}
                 title={field.title}
-                required
+                required={field.required}
               />
             </label>
           </div>

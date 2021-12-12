@@ -12,6 +12,7 @@ function ContactList({ contacts, onClick }) {
           id={contact.id}
           name={contact.name}
           number={contact.number}
+          email={contact.email}
           onClick={() => onClick(contact.id)}
         />
       ))}

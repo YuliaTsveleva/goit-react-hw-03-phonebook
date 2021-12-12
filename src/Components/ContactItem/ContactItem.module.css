@@ -5,10 +5,12 @@
   width: 100%;
   color: rgba(70, 97, 155, 0.904);
   line-height: 0.5;
+  border-bottom: 1px solid rgba(70, 97, 155, 0.904);
 }
 
 .Wrapper {
   display: flex;
+  /* flex-direction: column; */
   align-items: center;
 }
 
@@ -24,6 +26,26 @@
   padding: 10px 0;
   margin-right: 10px;
   font-size: 15px;
+  text-decoration: none;
+}
+
+.Email {
+  padding: 10px 0;
+  margin-right: 10px;
+  font-size: 15px;
+  font-style: italic;
+}
+
+.TelLink, .MailLink{
+  color: inherit
+}
+
+.TelLink{
+  text-decoration: none;
+}
+
+.TelLink:hover, .MailLink:hover{
+  color: rgba(9, 108, 255);
 }
 
 .Button {

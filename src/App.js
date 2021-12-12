@@ -20,13 +20,13 @@ class App extends Component {
 
   // раскомментить контакты для теста
 
-  addContact = ({ name, number }) => {
+  addContact = ({ name, number, email }) => {
     const alreadyExist = this.state.contacts.find(
       contact => contact.name.toLowerCase() === name.toLowerCase(),
     );
     if (!alreadyExist && name !== '' && number !== '') {
       this.setState(({ contacts }) => ({
-        contacts: [{ id: nanoid(), name, number }, ...contacts],
+        contacts: [{ id: nanoid(), name, number, email }, ...contacts],
       }));
     } else if (alreadyExist) {
       alert(`${name} is already exists in contacts`);
